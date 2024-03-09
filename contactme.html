@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact Me - Your Name</title>
+    <link rel="stylesheet" href="2ndport\styles.css">   
 </head>
 <body>
-    <h1>My Contact Details</h1>
-    <p>My fictional address: <br> 
-        123 North Street <br />
-        Some City <br />
-        Some Country <br />
-    </p>
-    <p>TEL: 077263718463</p>
-    <p>Email: mohamedmoatazshatta@gmail.com</p>
-    <hr>
+    <div class="container">
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+        
+        <section class="section">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
 </body>
 </html>
